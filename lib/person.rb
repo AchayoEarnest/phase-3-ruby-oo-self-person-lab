@@ -31,15 +31,15 @@ class Person
     end
 
     def clean?
-        @hygiene > 7 ? true : false
+        self.hygiene > 7 ? true : false
     end   
 
     def happy?
-        @happiness > 7 ? true : false
+        self.happiness > 7 ? true : false
     end 
 
     def get_paid(value)
-        @bank_account += value
+        self.bank_account += value
         "all about the benjamins"
     end
 
@@ -49,8 +49,8 @@ class Person
     end
     
     def work_out
-        self.hygiene -= 3
         self.happiness += 2
+        self.hygiene -= 3
         '♪ another one bites the dust ♫'
     end
 
@@ -71,8 +71,6 @@ class Person
         else    
             "blah blah blah blah blah"
         end    
-    end 
-
-    
+    end    
 
 end
